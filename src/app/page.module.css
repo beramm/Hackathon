@@ -26,6 +26,91 @@
   color: #4b5563;
 }
 
+.flowDiagram {
+  border: 1px solid #d9e3f0;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #f8fbff 0%, #f3f7ff 100%);
+  padding: 14px;
+}
+
+.flowDiagram h2 {
+  font-size: 16px;
+  margin: 0 0 10px;
+  color: #1f2937;
+}
+
+.flowSteps {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.flowStep {
+  flex: 1;
+  border: 1px solid #dbe5f5;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  text-align: center;
+  min-height: 148px;
+}
+
+.stepNumber {
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: #2563eb;
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.stepIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #eaf1ff;
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+}
+
+.flowStep h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #1f2937;
+}
+
+.flowStep p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.45;
+  color: #374151;
+}
+
+.flowArrow {
+  align-self: center;
+  color: #4b5563;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 780px) {
+  .flowSteps {
+    flex-direction: column;
+  }
+
+  .flowArrow {
+    transform: rotate(90deg);
+  }
+}
+
 .productLabel {
   display: flex;
   flex-direction: column;

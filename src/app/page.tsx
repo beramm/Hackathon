@@ -112,6 +112,42 @@ export default function Home() {
           <p>Collect complete sourcing requirements before sending to suppliers.</p>
         </header>
 
+        <section className={styles.flowDiagram} aria-label="Process flow">
+          <h2>Workflow</h2>
+          <div className={styles.flowSteps}>
+            <article className={styles.flowStep}>
+              <span className={styles.stepNumber}>1</span>
+              <div className={styles.stepIcon} aria-hidden="true">
+                📝
+              </div>
+              <h3>Client Requirements</h3>
+              <p>Collect needs</p>
+            </article>
+            <span className={styles.flowArrow} aria-hidden="true">
+              →
+            </span>
+            <article className={styles.flowStep}>
+              <span className={styles.stepNumber}>2</span>
+              <div className={styles.stepIcon} aria-hidden="true">
+                🏭
+              </div>
+              <h3>Factory Discovery</h3>
+              <p>Capabilities and condition check</p>
+            </article>
+            <span className={styles.flowArrow} aria-hidden="true">
+              →
+            </span>
+            <article className={styles.flowStep}>
+              <span className={styles.stepNumber}>3</span>
+              <div className={styles.stepIcon} aria-hidden="true">
+                ✅
+              </div>
+              <h3>Manager Review</h3>
+              <p>Approve or request correction</p>
+            </article>
+          </div>
+        </section>
+
         <section className={styles.chatBox}>
           {messages.map((message, index) => (
             <article
