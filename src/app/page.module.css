@@ -1,0 +1,133 @@
+.page {
+  min-height: 100vh;
+  background: #f2f5fa;
+  padding: 24px;
+  font-family: var(--font-geist-sans);
+}
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.08);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header h1 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.header p {
+  color: #4b5563;
+}
+
+.productLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.select {
+  padding: 10px 12px;
+  border: 1px solid #d0d7e2;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.chatBox {
+  height: 420px;
+  overflow-y: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fafafa;
+}
+
+.agentBubble,
+.userBubble {
+  border-radius: 12px;
+  padding: 10px 12px;
+  line-height: 1.5;
+}
+
+.agentBubble {
+  background: #eef4ff;
+  color: #1f2937;
+}
+
+.userBubble {
+  background: #dcfce7;
+  color: #1f2937;
+  align-self: flex-end;
+}
+
+.agentBubble p,
+.userBubble p {
+  white-space: pre-wrap;
+}
+
+.chatForm {
+  display: flex;
+  gap: 10px;
+}
+
+.input {
+  flex: 1;
+  border: 1px solid #d0d7e2;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.primaryButton,
+.secondaryButton {
+  border-radius: 10px;
+  border: 0;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primaryButton {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.primaryButton:disabled,
+.secondaryButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.saveSection {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.secondaryButton {
+  width: fit-content;
+  background: #111827;
+  color: #ffffff;
+}
+
+.saveHint {
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.saveStatus {
+  font-size: 14px;
+  color: #047857;
+}
