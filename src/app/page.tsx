@@ -108,7 +108,7 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <header className={styles.header}>
-          <h1>Marketplace AI Agent</h1>
+          <h1>Supplychain AI Agent</h1>
           <p>Collect complete sourcing requirements before sending to suppliers.</p>
         </header>
 
